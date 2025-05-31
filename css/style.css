@@ -94,6 +94,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link {
@@ -132,6 +133,7 @@ img {
   margin-left: auto;
   align-items: center;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link {
@@ -194,7 +196,7 @@ img {
   color: #fff;
   letter-spacing: 0.04em;
   border: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -279,7 +281,7 @@ img {
 }
 
 .team-link-icon:hover,
-:focus {
+.team-link-icon:focus {
   background-color: #404bbf;
 }
 
@@ -345,6 +347,11 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-open {
   position: relative;
   overflow: hidden;
@@ -365,14 +372,14 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image:hover .portfolio-open-text,
-.portfolio-image:focus .portfolio-open-text {
-  transform: translateY(0%);
-}
-
 .portfolio-image {
   width: 100%;
   object-fit: cover;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-open:hover .portfolio-open-text {
+  transform: translateY(0%);
 }
 
 .portfolio-content {
