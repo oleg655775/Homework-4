@@ -262,6 +262,7 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
+  margin: 8px;
   align-items: center;
   justify-content: center;
   list-style: none;
@@ -271,7 +272,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
