@@ -262,14 +262,10 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  margin: 8px;
+  margin-top: 8px;
   align-items: center;
   justify-content: center;
   list-style: none;
-}
-
-.team-list-icon {
-  height: 40px;
 }
 
 .team-link-icon {
